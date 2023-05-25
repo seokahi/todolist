@@ -5,7 +5,7 @@ const todoList = []
 
 function loadList() {
     const list = window.localStorage.getItem('todolist');
-    if(list.length !=0) {
+    if(list.length != undefined) {
         const list2 = list.split(",").filter(function(item){return item !==''});
         console.log(list2);
         if(list2.length != 0) {

@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 70px auto;
+  text-align: center;
+  width: 500px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+.title {
+  font-family: "Kalam", cursive;
+  font-size: 60px;
+  color: rgb(9, 177, 243);
+  margin: 0;
+  padding: 0;
+}
+
+.sub-content {
+  font-family: "Kalam", cursive;
+  font-size: 15px;
+  color: rgb(235, 189, 196);
+}
+
+.sec {
+  background-color: rgb(224, 241, 248);
+  border-radius: 10px;
+  padding: 15px;
+  height: 600px;
+  overflow: auto;
+}
+
+#todo-input {
+  width: 200px;
+  padding: 6px;
+  font-family: "Kalam", cursive;
+}
+
+#todo-button {
+  width: 35px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(235, 189, 196);
+  border-color: rgb(224, 241, 248);
+  color: rgb(252, 240, 183);
+}
+
+#todos {
+  padding-left: 0px;
+}
+
+#todo {
+  font-family: "Kalam", cursive;
+  list-style-type: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(240, 243, 60);
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgb(170, 226, 250);
+  margin-bottom: 10px;
+}
+
+#todo-content {
+    display: inline;
+}
+
+.button-container {
+  margin-left: 180px;
+  display: inline-block;
+}
+
+#todo-remove,
+#todo-modify {
+  font-family: "Kalam", cursive;
+  width: 60px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(235, 189, 196);
+  border-color: rgb(224, 241, 248);
+  color: rgb(252, 240, 183);
+  font-weight: bolder;
+}

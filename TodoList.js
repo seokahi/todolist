@@ -5,14 +5,14 @@ const todoList = []
 
 function loadList() {
     const list = window.localStorage.getItem('todolist');
-    const list2 = list.split(",").filter(function(item){return item !==''});
-    console.log(list2);
-    if(list2.length != 0) {
+    if(list.length !=0 ){
+        const list2 = list.split(",").filter(function(item){return item !==''});
         for(i=0;i<list2.length;i++) {
             createui(list2[i]);
             todoList.push(list2[i]);
         }
     }
+
 }
 function delteList(event) {
     const parentElement  = document.getElementById('todos'); 

@@ -5,8 +5,9 @@ const todoList = []
 
 function loadList() {
     const list = window.localStorage.getItem('todolist');
-    const checkList = list || [];
-    if(checkList.length !== 0 ){
+    const checkList = list || ["no"];
+    console.log(checkList[0])
+    if(checkList[0] !== "no" ){
         const list2 = list.split(",").filter(function(item){return item !==''});
         for(i=0;i<list2.length;i++) {
             createui(list2[i]);
